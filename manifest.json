@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Computrabajo Filter",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://pe.computrabajo.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://pe.computrabajo.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
